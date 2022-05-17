@@ -10,7 +10,7 @@ class BankAccount
   end
 
   def deposit(amount)
-
+    @balance += 100 
   end
 
   def withdraw(amount)
