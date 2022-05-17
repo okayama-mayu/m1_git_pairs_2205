@@ -1,7 +1,8 @@
 class BankAccount
   attr_reader :account_number,
-              :secret_code,
-              :balance
+              :secret_code
+
+  attr_accessor :balance
 
   def initialize(id, pin, balance)
     @account_number = id
@@ -10,7 +11,7 @@ class BankAccount
   end
 
   def deposit(amount)
-
+    self.balance += amount
   end
 
   def withdraw(amount)
